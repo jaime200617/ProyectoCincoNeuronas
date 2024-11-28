@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-image: url('/images/energia.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+}
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #000;
+    text-align: left;
+}
+.formulario {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 400px;
+    text-align: left;
+    margin-left: auto; /* Centrar */
+    margin-right: auto; /* Centrar */
+}
+
+input {
+    margin: 10px 0;
+    padding: 10px;
+    width: calc(100% - 20px);
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #28a745;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 100%;
+}
+button:hover {
+    background-color: #218838;
+}
+#priorizacion-result, #energia-container {
+    margin-top: 20px;
+    display: none;
+    text-align: center;
+}
+#resultado, #energia-result {
+    margin-top: 20px;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    border-radius: 5px;
+    display: inline-block;
+    width: 90%;
+    max-width: 400px;
+}
+#resultado.si, #energia-result.si {
+    background-color: #28a745;
+    border: 2px solid #218838;
+}
+#resultado.no, #energia-result.no {
+    background-color: #dc3545;
+    border: 2px solid #c82333;
+}
+#priorizacion-message.si {
+    background-color: #28a745; /* Verde */
+    border: 2px solid #218838;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#priorizacion-message.no {
+    background-color: #dc3545; /* Rojo */
+    border: 2px solid #c82333;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#energia-message.solar {
+    background-color: #fd7e14; /* Naranja */
+    border: 2px solid #c66a00;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#energia-message.eolica {
+    background-color: #007bff; /* Azul */
+    border: 2px solid #0056b3;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#form-energia {
+    margin: 20px auto; /* Centra horizontalmente */
+    display: inline-block; /* Asegura que se comporte como un elemento en bloque */
+}
